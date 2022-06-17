@@ -1,0 +1,173 @@
+/* @import url("https://fonts.google.com/specimen/Lexend+Deca");
+@import url("https://fonts.google.com/specimen/Big+Shoulders+Display"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(0, 0%, 95%)
+}
+main{
+    width: 60%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    margin:5em auto ;
+    display: flex;
+}
+.sedans{
+    background: hsl(31, 77%, 52%);
+    height: 100%;
+    color:  hsla(0, 0%, 100%, 0.75);
+    padding: 3em;
+}
+.suvs{
+    background: hsl(184, 100%, 22%);
+    height: 100%;
+    padding: 3em;
+}
+.luxury{
+    background: hsl(179, 100%, 13%);
+    height: 100%;
+    padding: 3em;
+}
+h2{
+    padding: 1.2em 0;
+    font-family: Big Shoulders Display;
+    font-size: 2em;
+    color:  hsl(0, 0%, 95%);
+}
+p{
+    font-size: 12px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca;
+}
+button{
+    background: hsl(0, 0%, 95%);
+    width: 70%;
+    margin: 5em 0;
+    padding: 0.8em;
+    border-radius: 2em;
+    border: none;
+}
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+.suvs button{
+    color: hsl(184, 100%, 22%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+/* Active state (on hover) */
+button:hover{
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    background: none;
+    color: hsl(0, 0%, 95%);
+}
+
+
+/* Tablet view */
+@media only screen and (max-width: 768px){
+    main{
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    img{
+        padding-top: 2em;
+    }
+    .sedans{
+        height: 100%;
+        padding: 1em;
+    }
+    .suvs{
+        height: 100%;
+        padding: 1em;
+    }
+    .luxury{
+        height: 100%;
+        padding: 1em;
+    }
+    h2{
+        margin-top: 2em;
+    }
+    p{
+        margin-top: 2em;
+    }
+    button{
+        margin-top: 5em;
+    }
+}
+
+/* Mobile 500px break point */
+@media only screen and (max-width: 500px){
+    main{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        margin: 0;
+    }
+    img{
+        padding-top: 0em;
+    }
+    .sedans{
+        height: 100%;
+        padding: 3em;
+    }
+    .suvs{
+        height: 100%;
+        padding: 3em;
+    }
+    .luxury{
+        height: 100%;
+        padding: 3em;
+    }
+    h2{
+        padding: 1em 0 0 0;
+    }
+    p{
+        padding: 2em 0 0 0;
+        font-size: 15px;
+    }
+}
+
+
+/* Mobile 375px break point */
+@media only screen and (max-width: 375px){
+    main{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        margin: 0;
+    }
+    .sedans{
+        height: 100%;
+        padding: 3em;
+    }
+    .suvs{
+        height: 100%;
+        padding: 3em;
+    }
+    .luxury{
+        height: 100%;
+        padding: 3em;
+    }
+    /* h2{
+        font-size: 30px;
+    } */
+    p{
+        font-size: 15px;
+        padding: 4em 0 0 0;
+    }
+    button{
+        margin-top: 4em;
+        padding: 1em;
+    }
+}
